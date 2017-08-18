@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:src="@mipmap/ic_cancel_grey"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/colorBlackText_333333"
+            android:text="@string/please_call_specialist_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView_phoneNumber"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView_numberTwo"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/specialist_advice_number_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/colorRed_CC0000"
+            android:id="@+id/textView_productId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/colorBlackText_333333"
+            android:text="@string/specialist_advice_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/grey_700"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/textView_messageNotice"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlackText_333333"
+            android:text="@string/specialist_advice_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:textSize="14dp"
+            android:id="@+id/button_callNow"
+            android:text="@string/call_now"
+            android:background="@drawable/button_accent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:textSize="14dp"
+            android:id="@+id/button_messageOnline"
+            android:textColor="@color/white"
+            android:text="@string/message_online"
+            android:background="@drawable/button_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
